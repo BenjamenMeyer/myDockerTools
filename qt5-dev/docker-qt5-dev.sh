@@ -101,4 +101,4 @@ echo "	Volume Mount Targets: ${VOLUMES_TO_MOUNT}"
 # Note: This leaves the user in a new user-shell with the full bash profile loaded
 # Hint: Setup the shell so that the user's UID and GID match your own, image provded
 #	has UID/GID = 1000/1000
-sudo docker run ${VOLUMES_TO_MOUNT} -u ${DOCKER_USER} -it qt5-dev-env /bin/bash -l
+sudo docker run ${VOLUMES_TO_MOUNT} -it qt5-dev-env:ubuntu-15.04
